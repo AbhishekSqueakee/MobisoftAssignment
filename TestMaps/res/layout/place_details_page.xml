@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff" >
+    <include layout="@layout/topbar"/>
+    <LinearLayout 
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:layout_centerInParent="true"
+        android:background="@drawable/box_two">
+        
+        <ImageView 
+            android:layout_width="match_parent"
+        	android:layout_height="200dp"
+        	android:id="@+id/placeLargeImage"
+        	android:background="@drawable/box_two"
+            />
+        
+        	<TextView 
+        	    android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:text="Location Name"
+	        	android:textStyle="bold"
+	        	android:textSize="16sp"
+	        	android:id="@+id/locationText"
+        	    />
+        	<TextView 
+        	    android:layout_width="match_parent"
+	        	android:layout_height="wrap_content"
+	        	android:text="Location Name"
+	        	android:id="@+id/locationDetailsText"
+	        	android:textSize="16sp"
+	        	android:layout_marginTop="5dp"
+	        	android:maxLines="3"
+	        	android:ellipsize="end"
+        	    />
+       
+    </LinearLayout>
+	<LinearLayout android:layout_width="match_parent"
+        android:layout_height="35dp"
+        android:orientation="horizontal"
+        android:layout_margin="5dp"
+        android:layout_alignParentBottom="true">
+	    <Button 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:id="@+id/btn_Map"
+	        android:text="Map"
+	        android:layout_weight="1"
+	        android:textColor="#fff" 
+	        android:background="@drawable/blue_gredient_fullround"
+	        />
+	    <Button 
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:id="@+id/btn_Fav"
+	        android:text="Set Favourite"
+	        android:layout_weight="1"
+	        android:textColor="#fff" 
+	        android:layout_marginLeft="10dp"
+	        android:background="@drawable/blue_gredient_fullround"
+	        />
+	</LinearLayout>
+</RelativeLayout>

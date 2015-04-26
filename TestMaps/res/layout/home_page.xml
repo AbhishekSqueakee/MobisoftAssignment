@@ -1,0 +1,60 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#fff">
+    <include layout="@layout/topbar"
+        android:id="@+id/topbar_home"/>
+<LinearLayout 
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:id="@+id/defaultLay"
+    	android:layout_below="@id/topbar_home"
+    	android:orientation="vertical"
+    	android:layout_marginTop="10dp"
+	    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/pageTitle"
+        android:gravity="center_horizontal"
+        android:textColor="#000000" 
+        android:textSize="18dp"/>
+
+	<ListView 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/listview_place"
+    	android:layout_weight="1"
+    />
+	
+	<Button 
+	    android:layout_width="match_parent"
+    	android:layout_height="35dp"
+    	android:id="@+id/showFavBtn"
+    	android:background="@drawable/blue_gredient_fullround"
+    	android:text="Show Favourite"
+    	android:layout_margin="5dp"
+    	android:textColor="#fff"
+	    />
+    </LinearLayout>
+	<LinearLayout 
+	    android:layout_below="@id/topbar_home"
+	    android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+    	android:id="@+id/placeListLay"
+    	android:orientation="vertical"
+    	android:layout_marginTop="10dp"
+	    >
+	    
+	    
+	<ListView 
+    	android:layout_width="match_parent"
+    	android:layout_height="wrap_content"
+    	android:id="@+id/lv_placeList"
+    	android:dividerHeight="0dp"
+		android:divider="@null"
+    />
+	</LinearLayout>
+	
+</RelativeLayout>
